@@ -1,0 +1,28 @@
+name: Build Valex (Windows)
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install NuGet CLI
+        run: choco install nuget.commandline -y
+
+      - name: Restore NuGet packages
+        run: nuget restore Valex.sln
+
+      - name: Build solution (Release x64)
+        run: msbuild Valex.sln /p:Configuration=Release /p:Platform=x64
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Valex-windows-build
+          path: Valex/Valex/bin/Release/**
