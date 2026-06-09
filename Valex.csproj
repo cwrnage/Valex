@@ -61,35 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
-    <Reference Include="Octokit">
-      <HintPath>D:\Valex_Executor\Octokit.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="WindowsBase" />
-    <Reference Include="Loretta.CodeAnalysis">
-      <HintPath>D:\Valex_Executor\Loretta.CodeAnalysis.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core" />
-    <Reference Include="OpenAI">
-      <HintPath>D:\Valex_Executor\OpenAI.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ClientModel">
-      <HintPath>D:\Valex_Executor\System.ClientModel.dll</HintPath>
-    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Numerics" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>D:\Valex_Executor\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.WebView2.Wpf">
-      <HintPath>D:\Valex_Executor\Microsoft.Web.WebView2.Wpf.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Web.WebView2.Core">
-      <HintPath>D:\Valex_Executor\Microsoft.Web.WebView2.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Loretta.CodeAnalysis.Lua">
-      <HintPath>D:\Valex_Executor\Loretta.CodeAnalysis.Lua.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
