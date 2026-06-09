@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Valex.TabItemHandleWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Valex" Title="TabEditor" AllowsTransparency="True" SizeToContent="WidthAndHeight" Topmost="True" ResizeMode="NoResize" WindowStyle="None" ShowInTaskbar="False" Width="72">
+  <Border Background="#181818">
+    <StackPanel>
+      <Border Width="1" Height="1" />
+      <Button Name="ExecuteB" BorderThickness="0" Background="#303030" FontSize="12" Foreground="#FFFFFFFF" Style="{DynamicResource FlatButton}" Content="Execute" Height="25" Width="69" FontFamily="/Valex;component/Assets/Fonts/#Manrope Semibold" Click="ButtonHandler" />
+      <Border Width="1" Height="1" />
+      <Button Name="DuplicateB" BorderThickness="0" Background="#303030" FontSize="12" Foreground="#FFFFFFFF" Style="{DynamicResource FlatButton}" Content="Duplicate" Height="25" Width="69" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Click="ButtonHandler" />
+      <Border Width="1" Height="1" />
+      <Button Name="CloseB" BorderThickness="0" Background="#303030" FontSize="12" Foreground="#FFFFFFFF" Style="{DynamicResource FlatButton}" Content="Close" Height="25" Width="69" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Click="ButtonHandler" />
+      <Border Width="1" Height="1" />
+      <Button Name="SplitB" BorderThickness="0" Background="#303030" FontSize="12" Foreground="#FFFFFFFF" Style="{DynamicResource FlatButton}" Content="Split View" Height="25" Width="69" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Click="ButtonHandler" />
+      <Border Width="1" Height="1" />
+    </StackPanel>
+  </Border>
+</Window>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window x:Class="Valex.ScriptListHandleWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:Valex" Title="Scripts helper" AllowsTransparency="True" SizeToContent="WidthAndHeight" Topmost="True" ResizeMode="NoResize" WindowStyle="None" ShowInTaskbar="False" Width="61">
+  <Border Background="#FF060203">
+    <StackPanel>
+      <Button Name="ExecuteB" BorderThickness="0" Background="#303030" FontSize="12" Foreground="#FFFFFFFF" Style="{DynamicResource FlatButton}" Content="Execute" Height="25" Width="60" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Click="ButtonHandler" />
+      <Border Width="1" Height="1" />
+      <Button Name="DeleteB" BorderThickness="0" Background="#303030" FontSize="12" Foreground="#FFFFFFFF" Style="{DynamicResource FlatButton}" Content="Delete" Height="25" Width="60" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Click="ButtonHandler" />
+    </StackPanel>
+  </Border>
+</Window>

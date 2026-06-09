@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="Valex.pidBorder" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Valex">
+  <Border CornerRadius="10" BorderThickness="1">
+    <Border.Background>
+      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF171717" Offset="0" />
+        <GradientStop Color="#FF101010" Offset="0.72" />
+      </LinearGradientBrush>
+    </Border.Background>
+    <Border.BorderBrush>
+      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+        <GradientStop Color="#FF444444" Offset="0" />
+        <GradientStop Color="#FF1F1F1F" Offset="1" />
+      </LinearGradientBrush>
+    </Border.BorderBrush>
+    <Grid>
+      <Label Name="pidLabel" Margin="10 0" Content="PID - 000000" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Foreground="#FFFFFFFF" Opacity="0.6" FontSize="13" />
+      <CheckBox Name="check" Style="{DynamicResource CheckBoxStyle3}" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Foreground="#FFFFFFFF" Opacity="0.6" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="229,0,0,0" Width="60" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+    </Grid>
+  </Border>
+</UserControl>

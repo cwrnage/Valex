@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UserControl x:Class="Valex.ChangelogBorder" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:local="clr-namespace:Valex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006">
+  <Border BorderThickness="1" CornerRadius="7">
+    <Border.Background>
+      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="#55171717" />
+        <GradientStop Offset="0.72" Color="#55101010" />
+      </LinearGradientBrush>
+    </Border.Background>
+    <Border.BorderBrush>
+      <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+        <GradientStop Offset="0" Color="#FF444444" />
+        <GradientStop Offset="1" Color="#FF1F1F1F" />
+      </LinearGradientBrush>
+    </Border.BorderBrush>
+    <Grid>
+      <Label Name="title" Margin="20,20,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="6777" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" FontSize="25" Foreground="#ED1212" />
+      <Label Margin="20,62,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="" FontFamily="Segoe MDL2 Assets " FontSize="13" Foreground="#7C7C84" />
+      <Label Name="date" Margin="41,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="2026-11-19" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Foreground="#7C7C84" />
+      <StackPanel Margin="20,100,0,30">
+        <TextBlock Name="changelogstb" FontFamily="Consolas" FontSize="16" Foreground="#7C7C84" Text="valex gooners lol" TextWrapping="Wrap" />
+      </StackPanel>
+      <Label Margin="124,62,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="" FontFamily="Segoe MDL2 Assets " FontSize="13" Foreground="#7C7C84" />
+      <Label Margin="143,60,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="SKID Executor" FontFamily="/Valex;component/Assets/Fonts/#Manrope SemiBold" Foreground="#7C7C84" />
+      <Button Name="changelogsbutton" Width="49" Height="32" Margin="0,23,22,0" HorizontalAlignment="Right" VerticalAlignment="Top" Foreground="#FF737373" Style="{DynamicResource Buttonnn}">
+        <Path Width="15" Height="17" HorizontalAlignment="Center" VerticalAlignment="Center" Data="M13,4.5 A2.5,2.5 0 1 1 13.702,6.237L6.97,9.604 A2.518,2.518 0 0 1 6.97,10.395999999999999L13.703,13.762999999999998 A2.5,2.5 0 1 1 13.032,15.103999999999997L6.299,11.736999999999998 A2.5,2.5 0 1 1 6.299,8.261999999999999L13.032,4.895999999999999 A2.52,2.52 0 0 1 13,4.5" Stretch="Fill" Fill="{Binding Foreground, ElementName=changelogsbutton}" />
+      </Button>
+    </Grid>
+  </Border>
+</UserControl>

@@ -1,0 +1,103 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Valex</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>True</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <TargetFramework>net481</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\valex_white_supremecy.png" />
+    <None Remove="Assets\Fonts\manrope-variablefont_wght.ttf" />
+    <None Remove="Assets\Fonts\manrope-bold.ttf" />
+    <None Remove="Assets\Images\valex_logo.png" />
+    <None Remove="Assets\Fonts\jetbrainsmono-regular.ttf" />
+    <None Remove="highlight.png" />
+    <None Remove="Assets\Images\nezur.png" />
+    <None Remove="Assets\Fonts\manrope-extrabold.ttf" />
+    <None Remove="Assets\Fonts\manrope-medium.ttf" />
+    <None Remove="Assets\Fonts\manrope-regular.ttf" />
+    <None Remove="Assets\Fonts\manrope-semibold.ttf" />
+    <None Remove="Assets\Fonts\manrope-extralight.ttf" />
+    <None Remove="Assets\Fonts\manrope-light.ttf" />
+    <None Remove="Assets\Images\valex1.png" />
+    <None Remove="Assets\Images\highlight.png" />
+    <None Remove="valex_logo.ico" />
+    <None Remove="valex_logo.png" />
+    <EmbeddedResource Include="Assets\Images\valex_white_supremecy.png" LogicalName="assets/images/valex_white_supremecy.png" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-variablefont_wght.ttf" LogicalName="assets/fonts/manrope-variablefont_wght.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-bold.ttf" LogicalName="assets/fonts/manrope-bold.ttf" />
+    <EmbeddedResource Include="Assets\Images\valex_logo.png" LogicalName="assets/images/valex_logo.png" />
+    <EmbeddedResource Include="Assets\Fonts\jetbrainsmono-regular.ttf" LogicalName="assets/fonts/jetbrainsmono-regular.ttf" />
+    <EmbeddedResource Include="Assets\Images\nezur.png" LogicalName="assets/images/nezur.png" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-extrabold.ttf" LogicalName="assets/fonts/manrope-extrabold.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-medium.ttf" LogicalName="assets/fonts/manrope-medium.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-regular.ttf" LogicalName="assets/fonts/manrope-regular.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-semibold.ttf" LogicalName="assets/fonts/manrope-semibold.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-extralight.ttf" LogicalName="assets/fonts/manrope-extralight.ttf" />
+    <EmbeddedResource Include="Assets\Fonts\manrope-light.ttf" LogicalName="assets/fonts/manrope-light.ttf" />
+    <EmbeddedResource Include="Assets\Images\valex1.png" LogicalName="assets/images/valex1.png" />
+    <EmbeddedResource Include="Assets\Images\highlight.png" LogicalName="assets/images/highlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Loretta.CodeAnalysis.Common" Version="0.2.13" />
+    <PackageReference Include="Loretta.CodeAnalysis.Lua" Version="0.2.13" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3595.46" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+    <PackageReference Include="Octokit" Version="14.0.0" />
+    <PackageReference Include="OpenAI" Version="2.7.0" />
+    <PackageReference Include="System.Runtime" Version="4.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Octokit">
+      <HintPath>D:\Valex_Executor\Octokit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="Loretta.CodeAnalysis">
+      <HintPath>D:\Valex_Executor\Loretta.CodeAnalysis.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="OpenAI">
+      <HintPath>D:\Valex_Executor\OpenAI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ClientModel">
+      <HintPath>D:\Valex_Executor\System.ClientModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\Valex_Executor\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf">
+      <HintPath>D:\Valex_Executor\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core">
+      <HintPath>D:\Valex_Executor\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Loretta.CodeAnalysis.Lua">
+      <HintPath>D:\Valex_Executor\Loretta.CodeAnalysis.Lua.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="QuorumAPI">
+      <HintPath>QuorumAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="highlight.png" />
+    <Resource Include="valex_logo.ico" />
+    <Resource Include="valex_logo.png" />
+  </ItemGroup>
+</Project>
