@@ -18,7 +18,7 @@ jobs:
       - name: Restore NuGet packages
         run: nuget restore Valex.sln
 
-      - name: Build solution (Release x64)
+      - name: Build solution (Release Any CPU)
         shell: pwsh
         run: |
           $vswhere = "$env:ProgramFiles(x86)\Microsoft Visual Studio\Installer\vswhere.exe"
@@ -27,14 +27,14 @@ jobs:
             $msbuild = Join-Path $inst "MSBuild\Current\Bin\MSBuild.exe"
             if (Test-Path $msbuild) {
               Write-Output "Using MSBuild at $msbuild"
-              & $msbuild Valex.sln /p:Configuration=Release /p:Platform=x64
+              & $msbuild Valex.sln /p:Configuration=Release /p:Platform="Any CPU"
             } else {
               Write-Output "MSBuild not found at $msbuild, falling back to dotnet msbuild"
-              dotnet msbuild Valex.sln /p:Configuration=Release /p:Platform=x64
+              dotnet msbuild Valex.sln /p:Configuration=Release /p:Platform="Any CPU"
             }
           } else {
             Write-Output "vswhere not found, falling back to dotnet msbuild"
-            dotnet msbuild Valex.sln /p:Configuration=Release /p:Platform=x64
+            dotnet msbuild Valex.sln /p:Configuration=Release /p:Platform="Any CPU"
           }
 
       - name: Upload build artifacts
